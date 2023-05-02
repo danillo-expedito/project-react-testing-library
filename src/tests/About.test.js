@@ -1,6 +1,5 @@
-import userEvent from '@testing-library/user-event';
 import React from 'react';
-import { act, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import About from '../pages/About';
 import renderWithRouter from '../renderWithRouter';
 
