@@ -20,6 +20,9 @@ describe('Testa funcionalidade do componente /PokemonDetails/', () => {
 
     const summaryHeading = screen.getByRole('heading', { name: /summary/i, level: 2 });
     expect(summaryHeading).toBeInTheDocument();
+
+    const summary = screen.getByText(/this intelligent pokémon roasts hard berries with electricity to make them tender enough to eat\./i);
+    expect(summary).toBeInTheDocument();
   });
   it('Teste se existe na página uma seção com os mapas contendo as localizações do Pokémon', () => {
     const { history } = renderWithRouter(<App />);
